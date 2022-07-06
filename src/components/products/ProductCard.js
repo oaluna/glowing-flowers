@@ -7,7 +7,7 @@ import PrimaryButton from '../../components/button/PrimaryButton';
 
 const productDescriptionCSS = css`
   width: 100%;
-  height: auto;
+  height: 100%;
   text-align: center;
 `;
 
@@ -34,7 +34,7 @@ function ProductCard({ product, onAddtoCart }) {
         {!!product.image && (
           <img
             className={css`
-              height: auto;
+              height: 450px;
               width: 100%;
               max-width: 100%;
               object-fit: cover;

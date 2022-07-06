@@ -1,7 +1,7 @@
 {
   "results": [
     {
-      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/w_550,h_600/v1656003850/arrangements/phaelenopsis-orchid-garden_seodpx.png",
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003850/arrangements/phaelenopsis-orchid-garden_seodpx.png",
       "id": 5,
       "favorite": "add",
       "delete": "delete",
@@ -15,7 +15,7 @@
       "stores": ["home", "all-occasions"]
     },
     {
-      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/w_550,h_600/v1656003850/arrangements/neon-light-city-design_jgzsyq.png",
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003850/arrangements/neon-light-city-design_jgzsyq.png",
       "id": 6,
       "favorite": "add",
       "delete": "delete",
@@ -44,7 +44,7 @@
     },
 
     {
-      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/w_550,h_600/v1656003850/arrangements/cosmoplolitan-design-alt_pmwds2.png",
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003850/arrangements/cosmoplolitan-design-alt_pmwds2.png",
       "id": 19,
       "favorite": "add",
       "delete": "delete",
@@ -58,7 +58,7 @@
       "stores": ["home", "all-occasions", "holidays"]
     },
     {
-      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/w_550,h_600/v1656003850/arrangements/citys-tulips-design_nqwe7c.png",
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003850/arrangements/citys-tulips-design_nqwe7c.png",
       "id": 20,
       "favorite": "add",
       "delete": "delete",
@@ -72,7 +72,7 @@
       "stores": ["home", "all-occasions", "holidays"]
     },
     {
-      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/w_550,h_600/v1656003846/arrangements/asymmetric-centerpiece-design_anphoq.png",
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003846/arrangements/asymmetric-centerpiece-design_anphoq.png",
       "id": 21,
       "favorite": "add",
       "delete": "delete",
@@ -86,7 +86,7 @@
       "stores": ["home", "all-occasions", "well-wishes"]
     },
     {
-      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/w_550,h_600/v1656003848/arrangements/citys-rose-design_dqwdgr.png",
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003848/arrangements/citys-rose-design_dqwdgr.png",
       "id": 22,
       "favorite": "add",
       "delete": "delete",
