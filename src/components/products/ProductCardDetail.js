@@ -15,6 +15,9 @@ const productCSS = css`
   max-width: 1330px;
   margin-top: 0;
   height: auto;
+  @media (min-width: 300px) {
+    margin-top: 220px;
+  }
 
   @media (min-width: 768px) {
     margin-top: 180px;
@@ -60,6 +63,10 @@ const productDescriptionText = css`
   max-width: 100%;
   line-height: 1.5;
   padding: 15px 0px;
+  @media (min-width: 300px) {
+    overflow-y: scroll;
+    height: 50px;
+  }
 `;
 
 const defaultQuantity = 1;
@@ -84,7 +91,9 @@ function ProductCardDetail({ product }) {
           )}
         </div>
         <div className={productDescriptionCSS}>
-          <h1 className={productNameCSS}>{product.name}{" "}{product.emoji}</h1>
+          <h1 className={productNameCSS}>
+            {product.name} {product.emoji}
+          </h1>
           <div className={productPriceCSS}>${product.price}</div>
           <div className={productCategoryCSS}>Category: {product.category}</div>
           <div className={productDescriptionText}>{product.description}</div>

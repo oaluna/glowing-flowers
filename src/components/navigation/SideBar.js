@@ -23,6 +23,7 @@ const sideBar = css`
   flex-direction: column;
   z-index: 2000;
   padding: 40px 40px 60px 40px;
+  width: 100%;
 
   > li {
     margin-bottom: 20px;
@@ -35,23 +36,24 @@ function SideBar({ onClick, refe }) {
     <ul ref={refe} className={sideBar}>
       <NavLink onClick={onClick}>
         <CloseOutlined />
+        <small>close</small>
       </NavLink>
 
-              <NavLink>
-                <Link to="/products/all-occasions">All Occasions</Link>
-              </NavLink>
-              <NavLink>
-                <Link to="/products/holidays">Holidays</Link>
-              </NavLink>
-              <NavLink>
-                <Link to="/products/bridal">Bridal</Link>
-              </NavLink>
-              <NavLink>
-                <Link to="/products/well-wishes">Well Wishes</Link>
-              </NavLink>
-              <NavLink>
-                <Link to="/products/deals">Deals</Link>
-              </NavLink>
+      <NavLink>
+        <Link to="/products/all-occasions">All Occasions</Link>
+      </NavLink>
+      <NavLink>
+        <Link to="/products/holidays">Holidays</Link>
+      </NavLink>
+      <NavLink>
+        <Link to="/products/bridal">Bridal</Link>
+      </NavLink>
+      <NavLink>
+        <Link to="/products/well-wishes">Well Wishes</Link>
+      </NavLink>
+      <NavLink>
+        <Link to="/products/deals">Deals</Link>
+      </NavLink>
     </ul>
   );
 }

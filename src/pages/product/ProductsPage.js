@@ -23,6 +23,9 @@ const productCardCSS = css`
   max-width: 1500px;
   margin: 0 auto;
   height: auto;
+  @media (min-width: 300px) {
+   grid-template-columns: repeat(1, 1fr);
+  }
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);

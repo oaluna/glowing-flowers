@@ -55,6 +55,7 @@ const toggleMenuIconCSS = css`
 `;
 
 const logoCSS = css`
+  display: flex;
   text-transform: uppercase;
   padding: 20px 40px;
   text-align: center;
@@ -64,6 +65,15 @@ const logoCSS = css`
     letter-spacing: 3px;
     font-family: 'Playfair Display';
     font-weight: 700;
+  }
+  @media (max-width: 700px) {
+    margin: 1em 0 0 0;
+    padding: 0;
+    .logo {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
   }
 `;
 
@@ -99,7 +109,7 @@ const NavBar = () => {
         onClick={() => setTitleTab('Glowing Flowers | Plants & Gifts')}
       >
         <Link to="/">
-          <img src={logo} alt="Glowing Flowers" />
+          <img src={logo} alt="Glowing Flowers" className="logo" />
         </Link>
       </div>
       <nav className={navigationCSS}>

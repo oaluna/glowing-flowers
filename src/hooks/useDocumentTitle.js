@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useDocumentTitle = (title) => {
+const useDocumentTitle = (title=`Glowing Flowers | Plants & Gifts`) => {
   const [titleTab, setTitleTab] = useState(title);
 
   useEffect(() => {

@@ -24,6 +24,28 @@ const productPriceCSS = css`
   font-weight: 400;
   letter-spacing: 0.5px;
 `;
+const productImageCSS = css`
+  img {
+    height: 450px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  img:hover {
+    transform: scale(1.5);
+    transition: 0.4s ease-in-out;
+    overflow: visible;
+  }
+  &:hover {
+    overflow: visible;
+  }
+  @media (max-width: 700px){
+    img:hover{
+      transform: scale(1.2);
+
+    }
+  }
+`;
 
 function ProductCard({ product, onAddtoCart }) {
   const navigate = useNavigate();
@@ -32,17 +54,13 @@ function ProductCard({ product, onAddtoCart }) {
     <Card product={product}>
       <div>
         {!!product.image && (
-          <img
-            className={css`
-              height: 450px;
-              width: 100%;
-              max-width: 100%;
-              object-fit: cover;
-            `}
-            src={product.image}
-            alt={product.name}
-            onClick={() => navigate(`/products/page/${product.id}`, {})}
-          />
+          <div className={productImageCSS}>
+            <img
+              src={product.image}
+              alt={product.name}
+              onClick={() => navigate(`/products/page/${product.id}`, {})}
+            />
+          </div>
         )}
         <div className={productDescriptionCSS}>
           <h4 className={productNameCSS}>{product.name}</h4>

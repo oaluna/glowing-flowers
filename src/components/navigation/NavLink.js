@@ -4,6 +4,7 @@ const NavLink = styled.li`
   cursor: pointer;
   margin-right: 21px;
   position: relative;
+
   &:last-of-type {
     margin: 0;
   }

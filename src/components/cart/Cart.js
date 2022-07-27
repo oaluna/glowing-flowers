@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { cx, css } from "@emotion/css";
 import { CloseOutlined } from "@ant-design/icons";
-
+import { useNavigate } from "react-router-dom"
 import { useCartContext } from "../../context/CartContext";
 import Card from "../../components/card/Card";
 import CardItem from "../../components/card/CardItem";
@@ -74,6 +74,9 @@ const discountCSS = css`
 `;
 
 function Cart() {
+  const navigate = useNavigate();
+
+
   const { add, items = [], remove, open } = useCartContext();
   const [discForCash, setDiscForCash] = useState(0);
 
@@ -95,6 +98,9 @@ function Cart() {
     }
   }
 
+  const goToCheckoutHandler = () => {
+    navigate('/checkout');
+  };
   return (
     <div className={cartCSS}>
       <CartIcon totalQuantity={totalQuantity} />
@@ -153,7 +159,8 @@ function Cart() {
             totalItemPrice={totalPrice.toFixed(2)}
           />
           <Hr />
-          <PrimaryButton text="CHECKOUT" />
+
+            <PrimaryButton text="CHECKOUT" onClick={goToCheckoutHandler} />
         </>
       )}
     </div>

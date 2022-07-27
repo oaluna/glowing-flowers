@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 
 const heroCSS = css`
   height: 70vh;
+
 `;
 
 const fadeInAnimation = keyframes`
@@ -23,23 +24,40 @@ const fadeInAnimation = keyframes`
 `;
 
 const headerHeroImgCSS = css`
-  height: 70vh;
-  width: 100%;
-  object-fit: cover;
-
   opacity: 1;
   z-index: 0;
+  width: 100%;
+  @media (min-width: 300px) {
+    display: flex;
+    height: 60%;
+    width: 100%;
+    img {
+    overflow-x: none;
+    }
+  }
+  @media (min-width: 768px){
+    height: 70vh;
+  object-fit: cover;
+  }
+
 `;
 
 const HeroTextCSS = styled.h1`
   font-weight: 500;
+color: white;
+  z-index: 21;
+  @media (min-width: 300px) {
+     position: absolute;
+     font-size: 50px;
+     margin: auto;
+   }
   @media (min-width: 768px) {
     font-size: 72px;
     width: 40%;
     margin: 45vh 15vw;
-    color: aliceblue;
+
     text-shadow: 0px 1.5px 2px rgba(0,0,0,0.65);
-    position: absolute;
+
     opacity: 1;
     z-index: 5;
     animation: ${fadeInAnimation} 0.3s ease-in;

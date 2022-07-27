@@ -46,6 +46,7 @@ function CardItem({
   src,
   alt
 }) {
+  
   return (
     <div className={productDescriptionWrapperCSS}>
       <div className={productDescriptionCSS}>
@@ -62,6 +63,7 @@ function CardItem({
               max-width: 100%;
               height: auto;
               object-fit: cover;
+
             `}
           />
         </div>

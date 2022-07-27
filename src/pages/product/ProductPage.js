@@ -18,8 +18,9 @@ const productCardCSS = css`
   margin: 0 auto;
   height: auto;
 
-  @media (min-width: 500px) {
-    padding: 40px 20px;
+  @media (min-width: 300px) {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30em 20px;
   }
 
   @media (min-width: 768px) {
