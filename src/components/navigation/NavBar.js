@@ -142,6 +142,9 @@ const NavBar = () => {
                 <Link to="/products/bridal">Bridal</Link>
               </NavLink>
               <NavLink>
+                <Link to="/products/seasonal">Seasonal</Link>
+              </NavLink>
+              <NavLink>
                 <Link to="/products/well-wishes">Well Wishes</Link>
               </NavLink>
               <NavLink>

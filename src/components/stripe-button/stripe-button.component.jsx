@@ -1,59 +1,42 @@
-import React from 'react';
-import StripeCheckout from 'react-stripe-checkout';
-//import axios from 'axios';
+import React from "react";
+import StripeCheckout from "react-stripe-checkout";
 
-const StripeCheckoutButton = ({ price }) => {
-  const priceForStripe = price * 100;
-  const publishableKey = process.env.STRIPE_PUBLISHABLE_API_KEY;
+const StripeCheckoutButton = props => {
+  const priceForStripe = props.price * 100;
+  const publishablekey = process.env.STRIPE_PUBLISHABLE_KEY;
 
-  const onToken = token => {
-    const onToken = token => {
-    alert('Successful payment!');
-  };
-      fetch(`payment`, {
-        method: 'post', data: {
-          amount: priceForStripe,
-          token: token
-        }
-      }).then(response => {
-        alert(`Thank you for your payment!`);
-      }).catch(error => {
-        console.log('Payment error: ', error);
-        alert('There was an issue with your payment. Please check your card info.')
-      })
+ const handleToken = async (token, adresses) => {
+  fetch('payment',() => {
+    let data = {
+       amount: priceForStripe,
+       token: token
+     }
+     return data;
+   })
+     .then(response => {
+       alert('succesful payment');
+     })
+     .catch(error => {
+       console.log('Payment Error: ', error);
+       alert(
+         'There was an issue with your payment! Please make sure you use the provided credit card.'
+       );
+     });
+};
 
-
-  //   axios({
-  //     url: 'payment',
-  //     method: 'post',
-  //     data: {
-  //       amount: priceForStripe,
-  //       token: token
-  //     }
-  //   })
-  //     .then(response => {
-  //       alert('succesful payment');
-  //     })
-  //     .catch(error => {
-  //       console.log('Payment Error: ', error);
-  //       alert(
-  //         'There was an issue with your payment! Please make sure you use the provided credit card.'
-  //       );
-  //     });
-  // };
-  }
   return (
     <StripeCheckout
-      label='Pay Now'
-      name='Glowing Flowers | plants & Gifts'
+      stripeKey={publishablekey}
+      label="Pay Now"
+      name="CRWN Clothing Ltd."
       billingAddress
       shippingAddress
-      image='https://svgshare.com/i/CUz.svg'
-      description={`Your total is $${price}`}
+      onClick={handleToken}
+      image="https://svgshare.com/i/CUz.svg"
+      description={`Your total price is ${props.price}`}
       amount={priceForStripe}
-      panelLabel='Pay Now'
-      token={onToken}
-      stripeKey={publishableKey}
+      panelLabel="Pay Now"
+      token={props.token}
     />
   );
 };

@@ -29,11 +29,12 @@ const productImageCSS = css`
     height: 450px;
     width: 100%;
     max-width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   img:hover {
     transform: scale(1.5);
     transition: 0.4s ease-in-out;
+ 
     overflow: visible;
   }
   &:hover {

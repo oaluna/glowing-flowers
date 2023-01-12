@@ -1,6 +1,49 @@
 {
   "results": [
     {
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1673493221/arrangements/winterIsComing_isjbjq.png",
+      "id": 41,
+      "favorite": "add",
+      "delete": "delete",
+      "name": "Winter is Here",
+      "emoji": "🌹",
+      "description": "The arrangement I make is suited for diffreent occasions . Whether for graduation, birthday or just a simple Thank. You gesture. This compact size and the round shape makes this bouquet so adorable. This bouquet also can be placed in the vase after the event is done and turn into a home decor or even centerpiece. Mixed flowers and use mostly bright and happy colors that give a young look, energetic and casual.",
+      "price": 47,
+      "quantity": 1,
+      "category": "all-occasions",
+      "stocked": true,
+      "stores": ["home", "all-occasions"]
+    },
+    {
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1673493607/arrangements/brightenDay_fanxij.png",
+      "id": 42,
+      "favorite": "add",
+      "delete": "delete",
+      "name": "Brighten Up Your Day Special",
+      "emoji": "🌷",
+      "description": "Part of our daily special and it's available for you to enjoy.",
+      "price": 50,
+      "quantity": 1,
+      "category": "all-occasions",
+      "stocked": true,
+      "stores": ["home", "all-occasions"]
+    },
+    {
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1673561727/arrangements/SweetLily_le3w2b.png",
+      "id": 43,
+      "favorite": "add",
+      "delete": "delete",
+      "name": "Sweet Lily",
+      "emoji": "🌸",
+      "description": "Welcome the season of fall into your home with this delicate and beautiful arrangement of different varieties of lilies. Crafted with other seasonal flowers woven throughout the entirety of the arrangement .Designer’s top choice with classic glass vase. Vase included",
+      "price": 64,
+      "quantity": 1,
+      "category": "all-occasions",
+      "stocked": true,
+      "stores": ["home", "all-occasions"]
+    },
+   
+    {
       "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003850/arrangements/phaelenopsis-orchid-garden_seodpx.png",
       "id": 5,
       "favorite": "add",

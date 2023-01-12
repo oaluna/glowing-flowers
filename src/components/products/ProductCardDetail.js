@@ -28,7 +28,7 @@ const productCSS = css`
 
 const productImgCSS = css`
   height: auto;
-  width: 100%;
+  max-width: 100%;
   margin-right: 0;
   @media (min-width: 768px) {
     margin-right: 30px;
@@ -84,6 +84,7 @@ function ProductCardDetail({ product }) {
               className={css`
                 max-width: 100%;
                 height: auto;
+                
               `}
               src={product.image}
               alt={product.name}
