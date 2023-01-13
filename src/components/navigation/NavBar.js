@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 import { MenuOutlined } from '@ant-design/icons';
 
 import logo from '../../assets/glowing-flowers.svg';
-import DoorDashIcon from "../../assets/doordash-icon.png";
-
+import DoorDash from "../../components/button/DoorDash";
 import { useCartContext } from '../../context/CartContext';
 import useOutsideClick from '../../hooks/useOutsideClick';
 import { useDocumentTitle } from '../../hooks/useDocumentTitle';
@@ -115,11 +114,7 @@ const NavBar = () => {
         <Link to="/">
           <img src={logo} alt="Glowing Flowers" className="logo" />
         </Link>
-        <div>
-        <h6>Available on Doordash</h6>
-        <a href='https://www.doordash.com/store/glowing-flowers,-plants,-and-gifts-san-francisco-23502751'>
-        <img src={DoorDashIcon} alt="doordash" aria-labelledby='icon'/></a>
-        </div>
+       <DoorDash/>
       </div>
       <nav className={navigationCSS}>
         <div
