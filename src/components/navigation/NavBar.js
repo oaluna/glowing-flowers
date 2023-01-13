@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { MenuOutlined } from '@ant-design/icons';
 
 import logo from '../../assets/glowing-flowers.svg';
+import DoorDashIcon from "../../assets/doordash-icon.png";
 
 import { useCartContext } from '../../context/CartContext';
 import useOutsideClick from '../../hooks/useOutsideClick';
@@ -56,6 +57,9 @@ const toggleMenuIconCSS = css`
 
 const logoCSS = css`
   display: flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: space-between;
   text-transform: uppercase;
   padding: 20px 40px;
   text-align: center;
@@ -111,6 +115,11 @@ const NavBar = () => {
         <Link to="/">
           <img src={logo} alt="Glowing Flowers" className="logo" />
         </Link>
+        <div>
+        <h6>Available on Doordash</h6>
+        <a href='https://www.doordash.com/store/glowing-flowers,-plants,-and-gifts-san-francisco-23502751'>
+        <img src={DoorDashIcon} alt="doordash" aria-labelledby='icon'/></a>
+        </div>
       </div>
       <nav className={navigationCSS}>
         <div
