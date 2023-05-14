@@ -1,14 +1,14 @@
-import { css } from '@emotion/css';
-import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { css } from "@emotion/css";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-import { useProducts } from '../../data/useProducts';
-import ProductsList from '../../components/products/ProductsList';
-import Title from '../../components/heading/Title';
-import { SortControl, sortByTypes } from '../../components/select/SortControl';
-import Hero from '../../components/hero/Hero';
-import { useLatest } from '../../hooks/useLatest';
-import { usePrevious } from '../../hooks/usePrevious';
+import { useProducts } from "../../data/useProducts";
+import ProductsList from "../../components/products/ProductsList";
+import Title from "../../components/heading/Title";
+import { SortControl, sortByTypes } from "../../components/select/SortControl";
+import Hero from "../../components/hero/Hero";
+import { useLatest } from "../../hooks/useLatest";
+import { usePrevious } from "../../hooks/usePrevious";
 
 const pageWrapperCSS = css`
   margin-top: 130px;
@@ -24,7 +24,7 @@ const productCardCSS = css`
   margin: 0 auto;
   height: auto;
   @media (min-width: 300px) {
-   grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   @media (min-width: 768px) {
@@ -103,7 +103,11 @@ function ProductsPage() {
   return (
     <div className={pageWrapperCSS}>
       {!category && <Hero />}
-			<img src="https://res.cloudinary.com/dgdnpkfun/image/upload/v1684030399/Pastel-Rainbow-Modern-January-Monthly-Email-Header-Email-Header_r6y5t1.png" alt="Mothers Day Sale" />
+      <img
+        src="https://res.cloudinary.com/dgdnpkfun/image/upload/v1684030399/Pastel-Rainbow-Modern-January-Monthly-Email-Header-Email-Header_r6y5t1.png"
+        alt="Mothers Day Sale"
+        style={{ objectSize: "fill" }}
+      />
       <Title title={category} />
       <SortControl
         sortBy={sortBy}
