@@ -1,6 +1,77 @@
 {
   "results": [
     {
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1684027844/love-you-mom_ggmrij.png",
+      "id": 61,
+      "favorite": "add",
+      "delete": "delete",
+      "name": "Love You, Mom!",
+      "emoji": "🌹",
+      "description": "This unique centerpiece’ design is a way to celebrate Mother’s Day. Beautifully arranged with many seasonal blooms, vibrant colors and the fresh scents make a great atmosphere for Mom.. Perfectly situated in her dining table. You can supersize your love for Mom and order her a larger piece. Both arrangements comes with a note.",
+      "price": 99,
+      "quantity": 1,
+      "category": "holidays",
+      "stocked": true,
+      "stores": ["home", "holidays", "deals"]
+    },
+    {
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1684028212/thanks-mom_nilxyf.png",
+      "id": 62,
+      "favorite": "add",
+      "delete": "delete",
+      "name": "Thanks, Mom!",
+      "emoji": "🌹",
+      "description": "Another way to express your love and thanks to your Mom’s by sending her this elegant, gorgeous flowers arrangement on Mother’s Day. A combo premium flowers such Ranunculus, , Frisia, Lysianthus , Roses, and others to give a modern look arrangement. Free a card with message!",
+      "price": 129,
+      "quantity": 1,
+      "category": "holidays",
+      "stocked": true,
+      "stores": ["home", "holidays", "deals"]
+    },
+    {
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1684028474/best-mom-ever_vijakj.png",
+      "id": 63,
+      "favorite": "add",
+      "delete": "delete",
+      "name": "Best Mom Ever",
+      "emoji": "🌹",
+      "description": "A mix of roses, Peruvian lilies, Gerbera daises, wax flowers, eucalyptus. Wrapped beautifully for her. You can include a short note for personal touch on us.",
+      "price": 79,
+      "quantity": 1,
+      "category": "holidays",
+      "stocked": true,
+      "stores": ["home", "holidays", "deals"]
+    },
+    {
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1684028777/fabulous-mom_ui3yyf.png",
+      "id": 64,
+      "favorite": "add",
+      "delete": "delete",
+      "name": "Fabulous Mom",
+      "emoji": "🌹",
+      "description": "Every Mom deserve the very best in this special day. Why not an elegant bouquet . Free note with a short message.",
+      "price": 99,
+      "quantity": 1,
+      "category": "holidays",
+      "stocked": true,
+      "stores": ["home", "holidays", "deals"]
+    },
+    {
+      "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1684029184/fifteen-elegant-classic-roses-for-moms_hngd54.png",
+      "id": 62,
+      "favorite": "add",
+      "delete": "delete",
+      "name": "15 Elegant Classic Roses for Moms",
+      "emoji": "🌹",
+      "description": "15 hand picked classic roses, beautifully arranged in a metallic glass vase. Letting mom know how fabulous she has been. A token of gratitude and love onMothers Day. Free for a short message with a Mothers Day’ card.",
+      "price": 109,
+      "quantity": 1,
+      "category": "holidays",
+      "stocked": true,
+      "stores": ["home", "holidays", "deals"]
+    },
+
+    {
       "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1673493221/arrangements/winterIsComing_isjbjq.png",
       "id": 41,
       "favorite": "add",
@@ -42,7 +113,7 @@
       "stocked": true,
       "stores": ["home", "all-occasions"]
     },
-   
+
     {
       "image": "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003850/arrangements/phaelenopsis-orchid-garden_seodpx.png",
       "id": 5,

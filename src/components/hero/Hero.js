@@ -129,7 +129,7 @@ function Hero() {
       </Link>
       <img
         className={headerHeroImgCSS}
-        src="https://images.pexels.com/photos/950251/pexels-photo-950251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        src="https://res.cloudinary.com/dgdnpkfun/image/upload/v1684030399/Pastel-Rainbow-Modern-January-Monthly-Email-Header-Email-Header_r6y5t1.png"
         alt="flower arrangements"
       />
     </div>

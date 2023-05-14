@@ -1,16 +1,3 @@
-import { Cloudinary } from "@cloudinary/url-gen"
-import { AdvancedImage } from "@cloudinary/react"
-import { thumbnail, scale } from "@cloudinary/url-gen/actions/resize";
-import { image } from "@cloudinary/url-gen/qualifiers/source";
-
-
-const cld = new Cloudinary({
-  cloud: {
-    cloudName: process.env.CLOUDINARY_CLOUDNAME
-  }
-});
-
-
 const SHOP_DATA = [
   {
     name: 'All Occasions',
