@@ -106,7 +106,7 @@ function ProductsPage() {
       <img
         src="https://res.cloudinary.com/dgdnpkfun/image/upload/v1684030399/Pastel-Rainbow-Modern-January-Monthly-Email-Header-Email-Header_r6y5t1.png"
         alt="Mothers Day Sale"
-        style={{ objectSize: "fill" }}
+        style={{ objectSize: "fill", maxWidth: "100%" }}
       />
       <Title title={category} />
       <SortControl
