@@ -103,6 +103,7 @@ function ProductsPage() {
   return (
     <div className={pageWrapperCSS}>
       {!category && <Hero />}
+			<img src="https://res.cloudinary.com/dgdnpkfun/image/upload/v1684030399/Pastel-Rainbow-Modern-January-Monthly-Email-Header-Email-Header_r6y5t1.png" alt="Mothers Day Sale" />
       <Title title={category} />
       <SortControl
         sortBy={sortBy}
