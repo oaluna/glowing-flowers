@@ -15,7 +15,7 @@ const SignInAndSignUp = lazy(() =>
   import("./pages/sign-in-and-sign-up/sign-in-and-sign-up.component")
 );
 
-const App = ({ id }) => {
+const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -27,11 +27,11 @@ const App = ({ id }) => {
       <Header />
       <AnimatePresence mode="sync">
         <Routes>
-          <Route key={id} index path="*" element={<Home />} />
-          <Route key={id} path="shop/*" element={<Shop />} />
-          <Route key={id} path="contact" element={<Contact />} />
-          <Route key={id} path="signin" element={<SignInAndSignUp />} />
-          <Route key={id} path="checkout" element={<Checkout />} />
+          <Route index path="*" element={<Home />} />
+          <Route path="shop/*" element={<Shop />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="signin" element={<SignInAndSignUp />} />
+          <Route path="checkout" element={<Checkout />} />
         </Routes>
       </AnimatePresence>
     </Suspense>

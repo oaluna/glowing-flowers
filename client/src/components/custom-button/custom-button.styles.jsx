@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 const buttonStyles = css`
   background: linear-gradient(
@@ -46,8 +46,8 @@ const getButtonStyles = (props) => {
 
 export const CustomButtonContainer = styled.button`
   min-width: 165px;
-	max-width: 100%;
-	margin: 0 5px;
+  max-width: 100%;
+  margin: 0 5px;
   width: auto;
   height: 50px;
   letter-spacing: 0.25px;
@@ -55,7 +55,7 @@ export const CustomButtonContainer = styled.button`
   padding: 0 15px 0 15px;
   font-size: 10px;
   text-transform: uppercase;
-  z-index: 10;
+  z-index: 20;
   font-weight: 700;
   cursor: pointer;
   display: flex;

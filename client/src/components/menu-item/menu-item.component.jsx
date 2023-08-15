@@ -6,7 +6,7 @@ const MenuItem = ({ title, size, imageUrl, linkUrl }) => {
 
   return (
     <div
-      className="flex flex-row items-center card-compact h-96 overflow-hidden shadow-xl image-full space-x-0 my-5 bg-gradient-to-br from-rose-200 to-amber-200"
+      className="flex flex-row items-center card-compact h-96 overflow-hidden shadow-xl image-full space-x-0 my-5 bg-gradient-to-br from-rose-200 to-amber-200 rounded-lg"
       size={size}
       onClick={() => navigate(`${linkUrl}`)}
     >

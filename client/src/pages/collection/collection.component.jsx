@@ -18,6 +18,7 @@ const CollectionPage = ({ collection, ItemPage }) => {
   const { title, items } = collection;
   return (
     <CollectionPageContainer>
+		
       <CollectionTitle>{title}</CollectionTitle>
       <CollectionItemsContainer>
         {items.map(item => (

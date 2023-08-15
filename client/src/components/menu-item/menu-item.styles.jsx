@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 
 export const MenuItemContainer = styled.div`
-  height: ${({ size }) => (size ? '380px' : '240px')};
-  min-width: 30%;
-	max-width: 45%;
-	position: relative;
+  	height: ${({ size }) => (size ? '380px' : '240px')};
+  	min-width: 30%;
+		max-width: 45%;
+		position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 		align-items:flex-end;
-		justify-content:flex-end;
+		justify-content:space-between;
 		overflow: hidden;
     border-radius: 15px;
 		margin: 15px;
+		padding: 15px;
 		box-shadow: 0 20px 25px -5px rgb(0 0 0 / .1), 0 8px 10px -6px rgb(0 0 0 / .1);
   &:hover {
     box-shadow: 0 20px 25px 4px rgb(0 0 0 / .1), 0 8px 10px 4px rgb(0 0 0 / .1);
@@ -40,10 +41,11 @@ export const MenuItemContainer = styled.div`
     height: ${({ size }) => (size ? '380px' : '240px')};
     min-width: 50%;
 
-    flex: 1 1 auto;
+   
     display: flex;
+	 flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border: none;
     margin: 0 7.5px 15px;
     &:hover {
@@ -67,7 +69,7 @@ export const MenuItemContainer = styled.div`
 `;
 
 export const BackgroundImageContainer = styled.div`
-  width: 100%;
+  max-width: 50%;
   height: 100%;
 
   padding: 0;
@@ -79,11 +81,12 @@ export const BackgroundImageContainer = styled.div`
 export const ContentContainer = styled.div`
   height: 90px;
   width: ${({ size }) => (size ? '380px' : '240px')};
+	max-width: 50%;
   padding: 0 25px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-between;
   border: none;
 	box-shadow: 0px 1.5px 6px rgba(0,0,0,0.75);
  
@@ -104,6 +107,8 @@ export const ContentTitle = styled.span`
   text-shadow: 1px 0px 10px #000;
   font-size: 22px;
   color: white;
+	width: 50%;
+	text-align: right;
 
 `;
 
@@ -112,5 +117,7 @@ export const ContentSubtitle = styled.span`
   text-shadow: 1px 0px 10px #000;
   font-size: 16px;
   color: white;
+	width: 50%;
+	text-align:right;
 
 `;

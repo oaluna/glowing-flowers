@@ -24,7 +24,7 @@ const HomePage = () => {
 			<motion.div
 		 initial={{opacity: 0}}
   whileInView={{opacity: 1}}
-  viewport={{ 	root: scrollRef }}
+  viewport={{	root: scrollRef }}
 
 	>
       <FeaturedItemsContainer/>

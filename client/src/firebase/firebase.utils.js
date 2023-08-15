@@ -1,16 +1,16 @@
-import firebase from "firebase/compat/app";
-import "firebase/compat/firestore";
-import "firebase/compat/auth";
+import firebase from '@firebase/app-compat';
+import '@firebase/firestore-compat';
+import '@firebase/auth-compat';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCVu0Jho9inNhN_ArO6AUkrIEwxSMKWbV8",
-  authDomain: "glowing-flowers.firebaseapp.com",
-  databaseURL: "https://glowing-flowers-default-rtdb.firebaseio.com",
-  projectId: "glowing-flowers",
-  storageBucket: "glowing-flowers.appspot.com",
-  messagingSenderId: "264973834429",
-  appId: "1:264973834429:web:70afca2f8991bfe0927fd4",
-  measurementId: "G-QG3R5456WY",
+  apiKey: 'AIzaSyA9azSseaNwwRK7sHbPg4VmSkkOv-ihzpE',
+  authDomain: 'glowing-flower.firebaseapp.com',
+  databaseURL: 'https://glowing-flower-default-rtdb.firebaseio.com',
+  projectId: 'glowing-flower',
+  storageBucket: 'glowing-flower.appspot.com',
+  messagingSenderId: '912214442669',
+  appId: '1:912214442669:web:8670e14e63373f2dafbc24',
+  measurementId: 'G-FP4QV6GRHK',
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -19,12 +19,12 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
 
   const userRef = firestore.doc(`users/${userAuth.uid}`);
+
   const snapShot = await userRef.get();
 
   if (!snapShot.exists) {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
-
     try {
       await userRef.set({
         displayName,
@@ -33,7 +33,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         ...additionalData,
       });
     } catch (error) {
-      console.log("error creating user", error.message);
+      console.log('error creating user', error.message);
     }
   }
 
@@ -45,8 +45,8 @@ export const addCollectionAndDocuments = async (
   objectsToAdd
 ) => {
   const collectionRef = firestore.collection(collectionKey);
-  const batch = firestore.batch();
 
+  const batch = firestore.batch();
   objectsToAdd.forEach((obj) => {
     const newDocRef = collectionRef.doc();
     batch.set(newDocRef, obj);
@@ -83,10 +83,11 @@ export const getCurrentUser = () => {
 };
 
 export const auth = firebase.auth();
-export const firestore = firebase.firestore();
-export const googleProvider = new firebase.auth.GoogleAuthProvider();
-googleProvider.setCustomParameters({ prompt: "select_account" });
 
+export const firestore = firebase.firestore();
+
+export const googleProvider = new firebase.auth.GoogleAuthProvider();
+googleProvider.setCustomParameters({ prompt: 'select_account' });
 export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);
 
 export default firebase;

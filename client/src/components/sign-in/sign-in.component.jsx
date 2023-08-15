@@ -49,13 +49,14 @@ const SignIn = ({ emailSignInStart, googleSignInStart, ...props }) => {
           value={password}
           handleChange={handleChange}
           label="password"
+					autocomplete="current-password"
           required
         />
         <div className="flex justify-between">
           <CustomButton type="submit"> Sign in </CustomButton>
           <CustomButton
             type="button"
-            onClick={googleSignInStart}
+            onClick={() => googleSignInStart()}
             {...props.isGoogleSignIn}
           >
             Sign in with Google
