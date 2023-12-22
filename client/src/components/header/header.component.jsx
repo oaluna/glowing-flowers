@@ -14,12 +14,12 @@ import { HomeIcon } from "@heroicons/react/24/outline";
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
 <header className="bg-white fixed top-0 w-screen h-auto z-20">
-  <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+  <div className="mx-auto max-w-screen px-4 sm:px-6 lg:px-8">
     <div className="flex h-16 items-center justify-between">
       <Link to="/">
-        <HomeIcon height={"16"} width={"16"}/>
+        <HomeIcon height="16" width="16"/>
       </Link>
-		<div className="md:flex md:items-center md:mx-auto md:gap-12 font-[Urbanist]">
+		<div className="md:flex md:items-center md:mx-auto md:gap-12 md:w-full font-[Urbanist]">
       <Link
         className="text-slate-900 p-0 lg:p-[25px] h-full text-sm font-semibold cursor-pointer hover:text-pink-600"
         to="/shop"

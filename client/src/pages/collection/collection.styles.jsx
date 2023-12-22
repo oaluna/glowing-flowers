@@ -14,8 +14,12 @@ export const CollectionItemsContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
+  @media only screen and (max-width: 500px) {
 
+  grid-template-columns: 1fr;
+}
   & > div {
     margin-bottom: 30px;
   }
+  
 `;

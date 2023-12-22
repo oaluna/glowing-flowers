@@ -40,7 +40,7 @@ export const FEATURED_ITEM_DATA = [
   {
     imageUrl:
       "https://res.cloudinary.com/dgdnpkfun/image/upload/v1673493607/arrangements/brightenDay_fanxij.png",
-    id: 42,
+    id: "0",
     favorite: "add",
     delete: "delete",
     name: "Brighten Up Your Day Special",
@@ -60,7 +60,7 @@ export const FEATURED_ITEM_DATA = [
   {
     imageUrl:
       "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003850/arrangements/cosmoplolitan-design-alt_pmwds2.png",
-    id: 19,
+    id: "1",
     favorite: "add",
     delete: "delete",
     name: "Chic Centerpiece",
@@ -80,7 +80,7 @@ export const FEATURED_ITEM_DATA = [
   {
     imageUrl:
       "https://res.cloudinary.com/dgdnpkfun/image/upload/w_500,h_550/v1656003850/arrangements/metropolitan-design_fashox.png",
-    id: 7,
+    id: "2",
     favorite: "add",
     delete: "delete",
     name: "Metropolitan",
@@ -100,7 +100,7 @@ export const FEATURED_ITEM_DATA = [
   {
     imageUrl:
       "https://res.cloudinary.com/dgdnpkfun/image/upload/v1657057747/arrangements/massive-metropolitan_jyj0ht.png",
-    id: 28,
+    id: "3",
     favorite: "add",
     delete: "delete",
     name: "Massive Metropolitan",
@@ -119,7 +119,7 @@ export const FEATURED_ITEM_DATA = [
   {
     imageUrl:
       "https://res.cloudinary.com/dgdnpkfun/image/upload/v1656003846/arrangements/asymmetric-centerpiece-design_anphoq.png",
-    id: 21,
+    id: "4",
     favorite: "add",
     delete: "delete",
     name: "Asymmetric Centerpiece",

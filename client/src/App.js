@@ -23,6 +23,7 @@ const App = () => {
   }, [dispatch]);
 
   return (
+      <div className="max-w-screen h-screen overflow-x-hidden flex flex-col relative">
     <Suspense fallback={<Spinner />}>
       <Header />
       <AnimatePresence mode="sync">
@@ -35,6 +36,7 @@ const App = () => {
         </Routes>
       </AnimatePresence>
     </Suspense>
+      </div>
   );
 };
 

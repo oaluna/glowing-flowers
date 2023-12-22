@@ -7,7 +7,7 @@ const CollectionItem = ({ item, addItem }) => {
   const { name, pricingText, description, imageUrl } = item;
 
   return (
-    <div className="relative rounded-lg bg-gray-50 shadow-sm dark:bg-neutral-700 p-5 h-full flex flex-col items-start justify-evenly overflow-hidden p-0">
+    <div className="relative rounded-lg bg-gray-50 shadow-sm dark:bg-neutral-700 w-screen md:w-1/2 h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-0 gap-y-2 md:gap-x-2 overflow-hidden p-0">
       <div className="relative p-0 rounded-t-lg h-64 w-full object-contain overflow-hidden bg-gradient-to-tr from-rose-200 to-amber-200">
         <img src={imageUrl} alt="item" />
         <p className="absolute w-full h-full text-left font-[Urbanist] leading-tight opacity-0 hover:opacity-100 p-6 bg-slate-900/50 flex flex-row items-center -bottom-10 hover:bottom-0 transform transition-all text-slate-100 z-10">
