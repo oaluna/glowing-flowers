@@ -1,17 +1,28 @@
-import { useState } from "react";
-import { Routes, Route, useParams } from "react-router-dom";
-import { connect } from "react-redux";
-import { motion } from "framer-motion";
-import CollectionsOverviewContainer from "../../components/collections-overview/collections-overview.container";
-import CollectionPageContainer from "../collection/collection.container";
-import { fetchCollectionsStart } from "../../redux/shop/shop.actions";
-import { SHOP_DATA } from "./shop.data";
+import { useEffect } 
+from "react";
 
-import CollectionPreview from "../../components/collection-preview/collection-preview.component";
+import { Routes, Route } 
+from "react-router-dom";
 
-const ShopPage = ({ fetchCollectionsStart, match }) => {
-  const [collections, setCollections] = useState(SHOP_DATA);
-  const { path } = useParams();
+import { connect } 
+from "react-redux";
+
+import { motion } 
+from "framer-motion";
+
+import CollectionsOverviewContainer 
+from "../../components/collections-overview/collections-overview.container";
+
+import CollectionPageContainer 
+from "../collection/collection.container";
+
+import { fetchCollectionsStart } 
+from "../../redux/shop/shop.actions";
+
+const ShopPage = ({ fetchCollectionsStart }) => {
+  useEffect(() => {
+    fetchCollectionsStart();
+  }, [fetchCollectionsStart]);
 
   return (
     <div className="shop-page">
@@ -21,17 +32,13 @@ const ShopPage = ({ fetchCollectionsStart, match }) => {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.2 }}
       >
-        {collections.map(({ id, ...otherCollectionProps }) => (
-          <CollectionPreview key={id} {...otherCollectionProps} />
-        ))}
         <Routes>
           <Route
-            exact
-            path={`${path}`}
+            index
             element={<CollectionsOverviewContainer />}
           />
           <Route
-            path={`${path}/:collectionId`}
+            path=":collectionId"
             element={<CollectionPageContainer />}
           />
         </Routes>

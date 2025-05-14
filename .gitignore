@@ -1,1 +1,3 @@
 .vercel
+.env
+client/src/pages/shop/shop.data.js

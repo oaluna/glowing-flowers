@@ -23,7 +23,7 @@ const App = () => {
   }, [dispatch]);
 
   return (
-      <div className="max-w-screen h-screen overflow-x-hidden flex flex-col relative">
+      <div className="flex flex-col items-center justify-between min-h-screen mx-auto my-2 max-w-screen-2xl">
     <Suspense fallback={<Spinner />}>
       <Header />
       <AnimatePresence mode="sync">
